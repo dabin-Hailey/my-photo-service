@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://kit.fontawesome.com/672f0c1bae.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.css">
+  <link rel="stylesheet" href="./main.css" />
+</head>
+
+<body>
+  <!-- header -->
+  <header>
+    <h1>임직원 관리</h1>
+    <p>관리자님</p>
+  </header>
+
+  <!-- main -->
+  <main>
+    <h2>임직원 정보</h2>
+    <button>정보 변경</button>
+
+    <table>
+      <tr>
+        <td>이름</td>
+        <td>사용자가 입력한 내용</td>
+      </tr>
+      <tr>
+        <td>이메일</td>
+        <td>사용자가 입력한 내용</td>
+      </tr>
+      <tr>
+        <td>휴대폰 번호</td>
+        <td>사용자가 입력한 내용</td>
+      </tr>
+      <tr>
+        <td>구분</td>
+        <td>사용자가 입력한 내용</td>
+      </tr>
+    </table>
+    
+    <!-- 사용자가 업로드한 이미지 -->
+    <img> 이미지
+  </main>
+
+  <!-- footer -->
+  <footer>
+
+  </footer>
+
+
+  <script defer src="/__/firebase/10.1.0/firebase-app-compat.js"></script>
+  <script defer src="/__/firebase/10.1.0/firebase-auth-compat.js"></script>
+  <script defer src="/__/firebase/10.1.0/firebase-firestore-compat.js"></script>
+  <script defer src="/__/firebase/10.1.0/firebase-storage-compat.js"></script>
+
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.1.0/firebase-app.js";
+    import { getStorage } from "firebase/storage";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyA02l690u8rvFIdBmqPMyRzyekdfK8Ms4c",
+      authDomain: "my-photo-service.firebaseapp.com",
+      projectId: "my-photo-service",
+      storageBucket: "my-photo-service.appspot.com",
+      messagingSenderId: "125534091571",
+      appId: "1:125534091571:web:3110099fe8622f207ba646"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+
+    // Initialize Cloud Storage and get a reference to the service
+    const storage = getStorage(app);
+
+  </script>
+
+</body>
+
+</html>

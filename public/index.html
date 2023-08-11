@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://kit.fontawesome.com/672f0c1bae.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.css">
+  <link rel="stylesheet" href="./main.css" />
+</head>
+
+<body>
+  <!-- header -->
+  <header>
+    <div class="header-container">
+      <h1>임직원 관리</h1>
+      <div class="account">
+        <p>관리자님</p>
+        <i class="fas fa-regular fa-chevron-down fa-lg" style="color: #000000;"></i>
+      </div>
+    </div>
+  </header>
+
+  <!-- main -->
+  <main>
+    <button>임직원 등록</button>
+    <button>임직원 삭제</button>
+    <input type="search" class="search-bar" placeholder="이름 또는 이메일로 검색하기" />
+
+    <table>
+      <tr>
+        <td>체크박스</td>
+        <td>프로필 사진</td>
+        <td>이름</td>
+        <td>이메일</td>
+        <td>휴대폰 번호</td>
+        <td>구분</td>
+      </tr>
+      <!-- 사용자가 입력한 내용 JS로 받아서 DOM으로 출력 -->
+    </table>
+  </main>
+
+  <!-- footer -->
+  <footer>
+
+  </footer>
+
+
+  <script defer src="/__/firebase/10.1.0/firebase-app-compat.js"></script>
+  <script defer src="/__/firebase/10.1.0/firebase-auth-compat.js"></script>
+  <script defer src="/__/firebase/10.1.0/firebase-firestore-compat.js"></script>
+  <script defer src="/__/firebase/10.1.0/firebase-storage-compat.js"></script>
+
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.1.0/firebase-app.js";
+    import { getStorage } from "firebase/storage";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyA02l690u8rvFIdBmqPMyRzyekdfK8Ms4c",
+      authDomain: "my-photo-service.firebaseapp.com",
+      projectId: "my-photo-service",
+      storageBucket: "my-photo-service.appspot.com",
+      messagingSenderId: "125534091571",
+      appId: "1:125534091571:web:3110099fe8622f207ba646"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+
+    // Initialize Cloud Storage and get a reference to the service
+    const storage = getStorage(app);
+
+  </script>
+
+</body>
+
+</html>
