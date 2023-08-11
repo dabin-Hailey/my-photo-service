@@ -1,8 +1,6 @@
 body {
-  font-size: 10px;
   color: black;
   font-family: 'Nanum Gothic', sans-serif;
-  background-color: white;
 }
 
 h1 {
@@ -11,7 +9,7 @@ h1 {
 }
 
 p {
-  font-size: 1rem;
+  font-size: 0.8rem;
   font-weight: 500;
 }
 
@@ -30,4 +28,81 @@ p {
 .account {
   display: flex;
   align-items: center;
+}
+
+.account:hover {
+  cursor: pointer;
+}
+
+.account > p {
+  margin-right: 0.3rem;
+}
+
+.control-section {
+  margin: 2.5rem 0 2rem 0;
+  padding: 0 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-container {
+  display: inline-block;
+}
+
+.btn {
+  padding: 0.7rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  border-radius: 2px;
+  border: none;
+  /* transition: 1s opacity; */
+}
+
+.btn:hover {
+  opacity: 80%;
+  cursor: pointer;
+}
+
+.btn-container > .btn:first-child {
+  margin-right: 0.3rem;
+}
+
+.orange-btn {
+  background-color: #FF6428;
+  color: white;
+}
+
+.white-btn {
+  color: dimgray;
+}
+
+.searchBar-container {
+  position: relative;
+  width: 16rem;
+  text-align: center;
+}
+
+.searchBar-container > input {
+  width: 100%;
+  border: 1px solid #bbb;
+  border-radius: 2px;
+  padding: 0.7rem 0.8rem;
+  font-size: 0.8rem;
+  white-space: nowrap;
+}
+
+.searchBar-container > span {
+  width: 1rem;
+  position : absolute;
+  top: 0.8rem;
+  right: 0.8rem;
+}
+
+.searchBar-container > span:hover {
+  cursor: pointer;
+}
+
+.artist-list {
+  display: flex;
+
 }
